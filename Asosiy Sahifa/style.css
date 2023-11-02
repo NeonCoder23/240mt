@@ -29,7 +29,6 @@ nav button {
     text-align: center;
     background: lightgoldenrodyellow;
     padding: 5px;
-    font-size: 18px;
     border: 1px solid silver;
     outline: none;
     border-radius: 5px;
@@ -124,5 +123,26 @@ section {
     100% {
         transform: rotate(360deg);
         
+    }
+}
+
+@media (min-width:1048px){
+    button {
+        font-size: 20px;
+    }
+}
+@media (max-width:1047px){
+    button {
+        font-size: 18px;
+    }
+}
+@media (max-width:778px){
+    button {
+        font-size: 16px;
+    }
+}
+@media (max-width:556px){
+    button {
+        font-size: 14px;
     }
 }
