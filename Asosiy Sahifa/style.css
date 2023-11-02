@@ -28,7 +28,6 @@ nav button {
     position: relative;
     text-align: center;
     background: lightgoldenrodyellow;
-    padding: 5px;
     border: 1px solid silver;
     outline: none;
     border-radius: 5px;
@@ -130,20 +129,24 @@ section {
 @media (min-width:1048px){
     button {
         font-size: 20px;
+        padding: 5px;
     }
 }
 @media (max-width:1047px){
     button {
         font-size: 18px;
+        padding: 4px;
     }
 }
 @media (max-width:778px){
     button {
         font-size: 16px;
+        padding: 3px;
     }
 }
 @media (max-width:556px){
     button {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 2px;
     }
 }
