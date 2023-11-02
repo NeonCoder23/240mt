@@ -74,11 +74,11 @@ p {
 @media (max-width:446px){
     .box {
         grid-template-columns: 0.05fr 1fr;
-    min-width: 1000vw;
+    min-width: 100vw;
 
     }
     .container {
-    min-width: 1000vw;
+    min-width: 100vw;
 
     }
     td {
