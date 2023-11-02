@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+    font-family: Batang, cursive;
+}
+#forma {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    background: linear-gradient(to bottom, skyblue, cyan);
+    padding: 5px;
+}
+#forma .date_clear {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin-top: 10px;
+    background: rgba(0, 255, 0, 0.173);
+}
+#forma .addData {
+    display: grid;
+}
+#forma .addData input {
+    height: 24px;
+    width: 95px;
+}
+p {
+    font-size: 12px;
+}
+button {
+    padding: 5px;
+    font-size: 16px;
+    background: transparent;
+    border: 1.2px solid red;
+    border-radius: 5px;
+    text-align: center;
+}
+button:hover {
+    box-shadow: 0 0 10px 5px red;
+}
+
+
+/* Responsive */
+
+@media (min-width:1048px){
+    h1 {
+        font-size: 36px;
+    }
+    #forma .addData {
+        grid-template-columns: repeat(5, 1fr);
+        font-size: 20px;
+        gap: 30px;
+    }
+}
+@media (max-width:1047px){
+    h1 {
+        font-size: 32px;
+    }
+    #forma .addData {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 18px;
+        gap: 26px;
+    }
+}
+@media (max-width:778px){
+    h1 {
+        font-size: 30px;
+    }
+    #forma .addData {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 15px;
+        gap: 8px;
+    }
+}
+@media (max-width:556px){
+    h1 {
+        font-size: 30px;
+    }
+    #forma .addData {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 16px;
+        gap: 10px;
+    }
+}

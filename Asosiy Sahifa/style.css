@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100%;
+}
+header {
+    position: relative;
+    background: #112;
+    color: yellow;
+}
+header h1 {
+    text-align: center;
+    padding: 5px;
+}
+nav {
+    background: #112;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 10px;
+}
+nav button {
+    position: relative;
+    text-align: center;
+    background: lightgoldenrodyellow;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid silver;
+    outline: none;
+    border-radius: 5px;
+} 
+a {
+    text-decoration: none;
+    color: teal;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #112;
+}
+.loader {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation: animate 20s linear infinite;
+}
+.loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    transform: rotate(calc(var(--i) * 36deg));
+    
+}
+.loader span:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 4px solid #00efff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px aqua,
+    -30px -30px 0 aqua,
+    -30px -30px 10px aqua,
+    30px 30px 0 aqua,
+    30px 30px 10px aqua,
+    30px -30px 0 aqua,
+    30px -30px 10px aqua,
+    -30px 30px 0 aqua,
+    -30px 30px 10px aqua,
+    0 60px 0 aqua,
+    0 60px 10px aqua,
+    0 -60px 0 aqua,
+    0 -60px 10px aqua,
+    60px 0 0 aqua,
+    60px 0 10px aqua,
+    -60px 0 0 aqua,
+    -60px 0 10px aqua;
+   
+    animation-delay: calc(0.25s * var(--i));
+    transform-origin: 20px;
+    transition: 20s;
+}
+.loader:hover span::before {
+    box-shadow: 0 0 10px aqua,
+    -200px -200px 0 aqua,
+    -200px -200px 10px aqua,
+    200px 200px 0 aqua,
+    200px 200px 10px aqua,
+    200px -200px 0 aqua,
+    200px -200px 10px aqua,
+    -200px 200px 0 aqua,
+    -200px 200px 10px aqua,
+    0 600px 0 aqua,
+    0 600px 10px aqua,
+    0 -600px 0 aqua,
+    0 -600px 10px aqua,
+    600px 0 0 aqua,
+    600px 0 10px aqua,
+    -600px 0 0 aqua,
+    -600px 0 10px aqua;
+    transform-origin: 200px;
+    transform: rotate(360deg);
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+        
+    }
+    100% {
+        transform: rotate(360deg);
+        
+    }
+}
